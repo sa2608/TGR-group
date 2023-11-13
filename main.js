@@ -3,5 +3,5 @@ const redirectToLink = () => {
 }
 
 const redirectToTrading = () => {
-  window.location.href = "/trading.html";
+  window.location.href = "/https://sa2608.github.io/TGR-group/trading.html";
 }
