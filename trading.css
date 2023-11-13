@@ -1,0 +1,78 @@
+.trading__title {
+  margin: 94px 0 54px;
+
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 94px;
+}
+.trading {
+  display: flex;
+  gap: 70px;
+}
+.trading__cart {
+  border-radius: 17.604px;
+  padding: 26px;
+  border: 0.836px solid #8A8E91;
+}
+.trading__cart-dscr {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px; /* 222.222% */
+}
+.trading__cart-btn {
+  color: #fff;
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.956px; /* 144.2% */
+
+  margin-top: 30px;
+  border-radius: 12.978px;
+  background: var(--1, linear-gradient(92deg, #3869B8 1.5%, #8070C4 98.59%));
+}
+
+.trading__cart-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile {
+  display: flex;
+  margin-top: 230px;
+}
+.mobile__cart {
+  position: relative;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 17.604px;
+  border: 0.836px solid #8A8E91;
+  padding: 26px;
+  width: 800px;
+  height: 270px;
+}
+.mobile__cart-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px; /* 222.222% */
+}
+.mobile__cart-btn {
+  display: flex;
+  gap: 40px;
+}
+
+.mobile__cart-btn button {
+  width: 255px;
+}
+
+.mobile__img {
+  position: relative;
+  top: -80px;
+  left: -20px;
+}

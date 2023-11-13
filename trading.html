@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGR group</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="trading.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <header class="header">
+        <a class="header__logo" href="/">
+          <img src="./img/logo.svg" alt="Logo">
+        </a>
+
+        <select class="lang" name="lang" id="lang">
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+          <option value="it">IT</option>
+        </select>
+
+        <ul class="header__nav">
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Торговая платформа</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Типы счетов</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Рынки</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Новости</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">О компании</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="header__auth">
+          <button class="login" onclick="redirectToLink()">Войти</button>
+          <button class="register" onclick="redirectToLink()">Регистрация</button>
+        </div>
+      </header>
+
+      <h1 class="trading__title">Торговая платформа</h1>
+
+      <section class="trading">
+
+        <div class="trading__cart">
+          <p class="trading__cart-dscr">
+            Веб-платформа <b>Utip</b> позволяет торговать на рынке Форекс без приложения – достаточно иметь выход в интернет с любого браузера и в любой операционной системе.
+          </p>
+          <button class="trading__cart-btn">
+            <p>Перейти в Web-терминал</p>
+            <img src="./img/icons/down.svg">
+          </button>
+        </div>
+
+        <div class="trading__cart">
+          <p class="trading__cart-dscr">
+            Наш Desktop-терминал для профессиональных трейдеров доступен на Windows-компьютерах, делая торговлю удобной и доступной.
+          </p>
+          <button class="trading__cart-btn">
+            <p>Скачать для Windows</p>
+            <img src="./img/icons/windows.svg">
+          </button>
+        </div>
+
+      </section>
+
+      <section class="mobile">
+        <div class="mobile__cart">
+          <h3 class="mobile__cart-title">
+            Бесплатные приложения для мобильных устройствна базе <br/> наиболее популярных операционныхсистем - iOS и Android.
+          </h3>
+          <div class="mobile__cart-btn">
+            <button class="trading__cart-btn">
+              <p>Скачать для Android</p>
+              <img src="./img/icons/android.svg">
+            </button>
+            <button class="trading__cart-btn">
+              <p>Скачать для iOS</p>
+              <img src="./img/icons/apple.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile__img">
+          <img src="./img/Iphone_screen.png">
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__company">
+            <h3 class="footer__title">Компания</h3>
+            <p>
+              TGR-Group. Business company number 25432 <br/>
+              BC 2019
+            </p>
+            <p>
+              Suite 305, Griffith Corporate Centre,<br/>
+              P.O. Box 1510, Beachmont, Kingstown,<br/>
+              St. Vincent and the Grenadines
+            </p>
+          </div>
+
+          <div class="footer__support">
+            <h3 class="footer__title">Поддержка</h3>
+            <a href="tel:+996700495212">+996700495212</a>
+            <a href="mailto:support@tgr-group.com">support@tgr-group.com</a>
+          </div>
+
+          <div class="footer__doc">
+            <h3 class="footer__title">Документы</h3>
+            <a href="#">Условия использования</a>
+            <a href="#">Предупреждение о рисках</a>
+            <a href="#">Политика противодействия<br/>отмывания денежных средств</a>
+            <a href="#">Политика приватности</a>
+            <a href="#">Политика ввода/вывода средств</a>
+            <a href="#">Партнёрское соглашение</a>
+          </div>
+
+          <div class="footer__consult">
+            <h3 class="footer__title">Личная консультация</h3>
+            <button class="footer__consult-btn"  onclick="redirectToLink()">Записаться</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-dscr">
+            <p>
+              Просим обратить внимание, что во избежание конфликта согласно определению в Правиле 902 Положения S обнародованного
+              в соответствии с Законом США «о ценных бумагах» 1933 года, вся информация, в том числе и платформа, на этом веб-сайте
+              не может быть использована Гражданами США. За исключением зарегистрированного в США брокера-дилера; банка, действующего
+              в качестве брокера-дилера; филиала или агентства гражданина США за пределами США или граждане США, проживающие за пределами
+              США -  Для таких категорий инвесторов все транзакции будут выполнены за пределами США.
+            </p>
+            <p>
+              Investizo LTD. does not provide service to residents of the EEA countries, Австралия, Израиль, Япония, Соединенные Штаты and some other countries.
+            </p>
+          </div>
+
+          <div class="footer-logo">
+            <img src="./img/logo.svg" alt="Logo">
+            <p>© 2019-2023 TGR-Group Все права защищены</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

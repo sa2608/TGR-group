@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGR group</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <a class="header__logo" href="/">
+          <img src="./img/logo.svg" alt="Logo">
+        </a>
+
+        <select class="lang" name="lang" id="lang">
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+          <option value="it">IT</option>
+        </select>
+
+        <ul class="header__nav">
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Торговая платформа</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Типы счетов</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Рынки</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Новости</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">О компании</a>
+          </li>
+          <li class="header__nav-list">
+            <a class="header__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="header__auth">
+          <button class="login" onclick="redirectToLink()">Войти</button>
+          <button class="register" onclick="redirectToLink()">Регистрация</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main-top">
+          <section class="main__about">
+            <h3 class="main__about-welcome">Добро пожаловать!</h3>
+
+            <h1 class="main__about-title">
+              TGR <p>Incorporation</p>
+            </h1>
+
+            <p class="main__about-description">
+              Место, где бизнес может<br />
+              получить инвестиции<br />
+              а капитал - рост
+            </p>
+
+            <div class="main__about-form">
+              <input class="main__form-input" type="email" placeholder="Эл.почта/номер телефона" />
+              <button class="main__form-btn"  onclick="redirectToLink()">НАЧАТЬ</button>
+            </div>
+          </section>
+
+          <div class="main__img">
+            <img src="./img/Iphone_screen.png">
+          </div>
+        </div>
+
+        <div class="main__teaser">
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                GBPUSD
+              </div>
+              <div class="teaser__cart-percent tcp-red">
+                -0.01%
+              </div>
+            </div>
+            <p class="teaser__cart-price">1.22223</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                USDJPY
+              </div>
+              <div class="teaser__cart-percent">
+                0.11%
+              </div>
+            </div>
+            <p class="teaser__cart-price">151.447</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                USDCHF
+              </div>
+              <div class="teaser__cart-percent">
+                0.50%
+              </div>
+            </div>
+            <p class="teaser__cart-price">0.90463</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                XAUUSD
+              </div>
+              <div class="teaser__cart-percent">
+                2.83%
+              </div>
+            </div>
+            <p class="teaser__cart-price">1980.50</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                Brent
+              </div>
+              <div class="teaser__cart-percent tcp-red">
+                -4.73%
+              </div>
+            </div>
+            <p class="teaser__cart-price">85.53</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                WTI
+              </div>
+              <div class="teaser__cart-percent tcp-red">
+                -5.48%
+              </div>
+            </div>
+            <p class="teaser__cart-price">81.18</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                EURUSD
+              </div>
+              <div class="teaser__cart-percent">
+                0.14%
+              </div>
+            </div>
+            <p class="teaser__cart-price">1.06830</p>
+          </div>
+
+          <div class="teaser__cart">
+            <div class="teaser__cart-top">
+              <div class="teaser__cart-wallet">
+                AUDUSD
+              </div>
+              <div class="teaser__cart-percent tcp-red">
+                -0.09%
+              </div>
+            </div>
+            <p class="teaser__cart-price">0.63586</p>
+          </div>
+        </div>
+
+      </main>
+
+      <section class="platform">
+
+        <h2 class="platform__title">Торговая платформа</h2>
+
+        <p class="platform__description">
+          Платформа UTIP — это готовый пакет программ для организации бизнеса на валютных<br />
+          рынках. Платформа автоматизирует все важные бизнес-процессы, содержит встроенную<br />
+          систему исполнения ордеров и защищает вши данные от несанкционированного доступа.<br />
+          В распоряжении ваших клиентов все виды современных и удобных торговых терминалов.
+        </p>
+
+        <div class="platform__about">
+          <div class="platform__cart">
+            <img src="./img/platform-about/signal.svg">
+            <p>Сигналы для всех инструментов на основе индикаторов</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/up.svg">
+            <p>Свыше 80 технических индикаторов</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/time.svg">
+            <p>Ценовой оповещатель</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/analyz.svg">
+            <p>Три ценовых шкалы для анализа цен</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/econom.svg">
+            <p>Возможность просмотра Экономического Календаря</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/device.svg">
+            <p>Совместимость с любым устройством</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/adaptive.svg">
+            <p>Адаптирована для сенсорного управления</p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/grafik.svg">
+            <p>5 типов графиков </p>
+          </div>
+
+          <div class="platform__cart">
+            <img src="./img/platform-about/econom.svg">
+            <p>Детальные сведения о доступных торговых инструментах </p>
+          </div>
+
+        </div>
+
+        <div class="platform__bottom">
+          <img src="./img/platform-about/arrow-right.svg">
+          <button class="platform__bottom-btn" onclick="redirectToTrading()">Торговая платформа</button>
+          <img src="./img/platform-about/arrow-left.svg">
+        </div>
+      </section>
+
+      <section class="accounts">
+        <h1 class="accounts__title">Типы Cчетов</h1>
+
+        <p class="accounts__description">
+          Utip дает доступ к различным видам счетов, включая: Standart,<br />
+          Gold, Platinum, VIP
+        </p>
+
+        <div class="types">
+
+          <div class="types__cart standart"
+            style="background: linear-gradient(180deg, #FAE05A 0%, rgba(247, 250, 90, 0.13) 100%);">
+            <div class="types__wrap">
+              <div class="types__cart-top">
+                <h4 class="types__cart-title">
+                  Standart<br />
+                  <p>от 100 до 1 000$</p>
+                </h4>
+                <img src="./img/profits/profits-1.png">
+              </div>
+
+              <div class="types__cart-main">
+                <div class="tc__main-title">
+                  <div>Спред</div>
+                  <p class="tc__main-dsc">Плавающий,<br />начинается с</p>
+                  <p class="tc__main-badge" style="background: #FACD5A;">1.5</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Доступные<br />инструменты</div>
+                  <p class="tc__main-dsc">Валюта, Криптовалюта</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Макс. плечо</div>
+                  <p class="tc__main-dsc">1:250</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Торговая<br />платформа</div>
+                  <p class="tc__main-dsc">Utip Desktop, Utip<br />iOS, Utip Android</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Размер<br />контракта</div>
+                  <p class="tc__main-dsc">100000</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Stop Out</div>
+                  <p class="tc__main-dsc">20%</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Swap Free</div>
+                  <img src="./img/yellow-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Исполнение</div>
+                  <p class="tc__main-dsc">Market</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Бонус</div>
+                  <p class="tc__main-dsc">---</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Личный<br />менеджер</div>
+                  <p class="tc__main-dsc">---</p>
+                </div>
+
+              </div>
+              <button class="types__cart-btn" style="background: linear-gradient(92deg, #FACD5A 1.5%, #997823 98.59%);">
+                ОТКРЫТЬ СЧЁТ
+              </button>
+            </div>
+          </div>
+
+          <div class="types__cart gold"
+            style="background: linear-gradient(180deg, #EDF201 0%, rgba(237, 242, 1, 0.13) 100%);">
+            <div class="types__wrap">
+              <div class="types__cart-top">
+                <h4 class="types__cart-title">
+                  Gold<br />
+                  <p>от 2 000 до 5 000$</p>
+                </h4>
+                <img src="./img/profits/security-1.png">
+              </div>
+
+              <div class="types__cart-main">
+                <div class="tc__main-title">
+                  <div>Спред</div>
+                  <p class="tc__main-dsc">Плавающий,<br />начинается с</p>
+                  <p class="tc__main-badge" style="background: #FACD5A;">1.0</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Доступные<br />инструменты</div>
+                  <p class="tc__main-dsc">Валюта, Криптовалюта<br />Металлы, Энергия</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Макс. плечо</div>
+                  <p class="tc__main-dsc">1:500</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Торговая<br />платформа</div>
+                  <p class="tc__main-dsc">Utip Desktop, Utip<br />iOS, Utip Android</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Размер<br />контракта</div>
+                  <p class="tc__main-dsc">100000</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Stop Out</div>
+                  <p class="tc__main-dsc">20%</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Swap Free</div>
+                  <img src="./img/yellow-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Исполнение</div>
+                  <p class="tc__main-dsc">Market</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Бонус</div>
+                  <img src="./img/yellow-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Личный<br />менеджер</div>
+                  <p class="tc__main-dsc">---</p>
+                </div>
+
+              </div>
+              <button class="types__cart-btn" style="background: linear-gradient(92deg, #EEE502 1.5%, #5F6105 98.59%);">
+                ОТКРЫТЬ СЧЁТ
+              </button>
+            </div>
+          </div>
+
+          <div class="types__cart platinum"
+            style="background: linear-gradient(180deg, #6E5AFA 0%, rgba(110, 90, 250, 0.13) 100%);">
+            <div class="types__wrap">
+              <div class="types__cart-top">
+                <h4 class="types__cart-title">
+                  <div style="color: #6E5AFA;">Platinum<br /></div>
+                  <p>от 7 000$ до 10 000$</p>
+                </h4>
+                <img src="./img/profits/profits-2.png">
+              </div>
+
+              <div class="types__cart-main">
+                <div class="tc__main-title">
+                  <div>Спред</div>
+                  <p class="tc__main-dsc">Плавающий,<br />начинается с</p>
+                  <p class="tc__main-badge" style="background: #6E5AFA;">0.5</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Доступные<br />инструменты</div>
+                  <p class="tc__main-dsc">Валюта, Криптовалюта<br />Металлы, Энергия, CFDs</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Макс. плечо</div>
+                  <p class="tc__main-dsc">1:750</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Торговая<br />платформа</div>
+                  <p class="tc__main-dsc">Utip Desktop, Utip<br />iOS, Utip Android</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Размер<br />контракта</div>
+                  <p class="tc__main-dsc">100000</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Stop Out</div>
+                  <p class="tc__main-dsc">20%</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Swap Free</div>
+                  <img src="./img/platinum-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Исполнение</div>
+                  <p class="tc__main-dsc">Market</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Бонус</div>
+                  <img src="./img/platinum-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Личный<br />менеджер</div>
+                  <img src="./img/platinum-inn.svg" alt="there is">
+                </div>
+
+              </div>
+              <button class="types__cart-btn" style="background: linear-gradient(92deg, #6E5AFA 1.5%, #381FE7 98.59%);">
+                ОТКРЫТЬ СЧЁТ
+              </button>
+            </div>
+          </div>
+
+          <div class="types__cart vip"
+            style="background: linear-gradient(180deg, #5D01F2 0%, rgba(64, 1, 242, 0.13) 100%);">
+            <div class="types__wrap">
+              <div class="types__cart-top">
+                <h4 class="types__cart-title">
+                  <div style="display: flex; align-items: center; color: #A401F2;">VIP <img class="vip-img"
+                      src="./img/streamline.svg"><br /></div>
+                  <p>от 20 000$ до 50 000$</p>
+                </h4>
+                <img src="./img/profits/profits-3.png">
+              </div>
+
+              <div class="types__cart-main">
+                <div class="tc__main-title">
+                  <div>Спред</div>
+                  <p class="tc__main-dsc">Плавающий,<br />начинается с</p>
+                  <p class="tc__main-badge" style="background: #A401F2;">0.1</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Доступные<br />инструменты</div>
+                  <p class="tc__main-dsc">Валюта, Крипто, Металлы,<br />Энергия, CFDs, Индексы</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Макс. плечо</div>
+                  <p class="tc__main-dsc">1:1000</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Торговая<br />платформа</div>
+                  <p class="tc__main-dsc">Utip Desktop, Utip<br />iOS, Utip Android</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Размер<br />контракта</div>
+                  <p class="tc__main-dsc">100000</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Stop Out</div>
+                  <p class="tc__main-dsc">20%</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Swap Free</div>
+                  <img src="./img/vip-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Исполнение</div>
+                  <p class="tc__main-dsc">Market</p>
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Бонус</div>
+                  <img src="./img/vip-inn.svg" alt="there is">
+                </div>
+
+                <div class="tc__main-title">
+                  <div>Персональное<br />сопровождение</div>
+                  <img style="margin-left: 10px;" src="./img/vip-inn.svg" alt="there is">
+                </div>
+
+              </div>
+              <button class="types__cart-btn" style="background: linear-gradient(92deg, #A401F2 1.5%, #43145D 98.59%);">
+                ОТКРЫТЬ СЧЁТ
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section> <!-- accounts -->
+
+      <section class="acc__descrp">
+        <div class="acc__descrp-type">
+          <p>Тип счёта</p>
+          <div class="acc__descrp-btns">
+            <button class="standart-btn">STANDART</button>
+            <button class="gold-btn">GOLD</button>
+            <button class="platinum-btn">PLATINUM</button>
+            <button class="vip-btn acc-btn-active">VIP</button>
+          </div>
+        </div>
+
+
+      </section>
+      <div class="wallet">
+        <button class="wallet-btn wb-active">Валюта</button>
+        <button class="wallet-btn">Metals</button>
+        <button class="wallet-btn">Cryptocurrency</button>
+        <button class="wallet-btn">Energy</button>
+        <button class="wallet-btn">CFDs</button>
+        <button class="wallet-btn">Indices</button>
+      </div>
+      <div class="ac-about">
+        <h4 class="ac-about-title">Валюта</h4>
+        <p class="ac-about-dscrp">
+          Over 60 currency pairs are available for trading. Please, scroll down to see the complete list of them. To
+          find some currency pair just type<br />
+          your desired symbol in the search box.
+        </p>
+      </div>
+
+      <input class="main__bottom-input" type="email" placeholder="Search by symbol..." />
+
+      <section class="price">
+        <div class="price-btns">
+          <button style="background: #FFD34E;color: #000;font-weight: 700;">Обзор</button>
+          <button>Цены</button>
+          <button>Сигналы</button>
+        </div>
+        <div class="review">
+          <div class="review-top">
+            <p class="review-top-wlt">
+              9 совпадения<br>
+              Символ
+            </p>
+            <p class="review-top-size">Размер контракта</p>
+            <p class="review-top-min">Мин. объём</p>
+            <p class="review-top-max">Макс. объём</p>
+            <p class="review-top-short">Swap short</p>
+            <p class="review-top-long">Swap long</p>
+            <p class="review-top-kmss">Комиссия</p>
+            <p class="review-top-BID">BID</p>
+            <p class="review-top-ASK">ASK</p>
+            <p class="review-top-sprd">Спред</p>
+          </div>
+          <div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div><div class="rewiew-main">
+            <div class="review-top-wlt">
+              <p class="review-top-wallet">USA.30</p>
+              <p class="review-top-dscr">Dow Jones Index</p>
+            </div>
+            <p class="review-top-size">1</p>
+            <p class="review-top-min">0.01</p>
+            <p class="review-top-max">100</p>
+            <p class="review-top-short" style="color: #DC2958;">-1.34</p>
+            <p class="review-top-long" style="color: #DC2958;">-2.42</p>
+            <p class="review-top-kmss">$ 5.00</p>
+            <p class="review-top-BID">33839.62</p>
+            <p class="review-top-ASK">33840.62</p>
+            <p class="review-top-sprd">100</p>
+          </div>
+        </div>
+      </section>
+    </div> <!-- container -->
+    <div class="description">
+      <div class="container">
+        The charting solution we've adopted utilizes TradingView technology, a widely acclaimed platform cherished by numerous traders and investors worldwide.<br/>
+        TradingView offers state-of-the-art charting tools and provides a space for market enthusiasts to engage, visualize data, and prepare for trading various<br/>
+        assets, including <span class="oranges">BTC USD</span> and others.
+      </div>
+      
+    </div>
+
+    <div class="container">
+      <section class="news">
+        <h2 class="news__title">Новости</h2>
+
+        <div class="news__wrapper">
+          <p class="news__data">14 ноября 2023 г.</p>
+
+          <div class="news__cart">
+            <div class="news__cart-img">
+              <img src="./img/news/news-1.png">
+            </div>
+            <div class="nc-main">
+              <h3 class="news__cart-title">
+                Биткоин-майнер Northern Data привлечет 575 млн евро<br/>
+                от Tether
+              </h3>
+              <p class="news__cart-dsc">
+                Немецкая майнинговая компания Northern Data заключила соглашение<br/>
+                с Tether о получении кредитного финансирования на сумму €575 млн.
+              </p>
+              <div class="news__cart-date">
+                <p class="news__cart-MouthYear">14 нояб. 2023 г.</p>
+                <p class="news__cart-hour">17:26 GMT+1</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="news__cart">
+            <div class="news__cart-img">
+              <img src="./img/news/news-2.png">
+            </div>
+            <div class="nc-main">
+              <h3 class="news__cart-title">
+                Этот кит накопил почти 15 000 биткоинов (BTC)<br/>
+                с начала 2023 года
+              </h3>
+              <p class="news__cart-dsc">
+                С начала 2023 года неизвестный биткоин-кит накопил 14 599 BTC по <br/>
+                средней цене 28 071 долларов за токен. По текущей цене биткоина в <br/>
+                $37 000 стоимость принадлежащих ему монет составляет более $500 <br/>
+                млн, а нереализованная прибыль превышает $126 млн. 
+              </p>
+              <div class="news__cart-date">
+                <p class="news__cart-MouthYear">14 нояб. 2023 г.</p>
+                <p class="news__cart-hour">16:32 GMT+1</p>
+              </div>
+            </div>
+            
+          </div>
+
+
+          <p class="news__data">12 ноября 2023 г.</p>
+
+          <div class="news__cart">
+            <div class="news__cart-img">
+              <img src="./img/news/news-3.png">
+            </div>
+            <div class="nc-main">
+              <h3 class="news__cart-title">
+                Уолл-стрит в плюсе, инвесторы оценивали<br/>
+                комментарии Пауэлла
+              </h3>
+              <p class="news__cart-dsc">
+                Основные американские индексы растут в пятницу, так как <br/>
+                инвесторы посчитали комментарий председателя ФРС США <br/>
+                Джерома Пауэлла "ястребиным". они ожидают публикации <br/>
+                ключевых экономических данных на следующей неделе...
+              </p>
+              <div class="news__cart-date">
+                <p class="news__cart-MouthYear">12 нояб. 2023 г.</p>
+                <p class="news__cart-hour">16:32 GMT+1</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="news__cart">
+            <div class="news__cart-img">
+              <img src="./img/news/news-4.png">
+            </div>
+            <div class="nc-main">
+              <h3 class="news__cart-title">
+                Глава ФРБ Филадельфии поддерживает уровни ставок,<br/>
+                не ожидает их снижения в ближайшее время
+              </h3>
+              <p class="news__cart-dsc">
+                Глава Федерального резервного банка Филадельфии Патрик Харкер<br/>
+                сказал в среду, что недавнее решение центрального банка о <br/>
+                сохранении ставок на прежнем уровне было правильным.
+              </p>
+              <div class="news__cart-date">
+                <p class="news__cart-MouthYear">12 нояб. 2023 г.</p>
+                <p class="news__cart-hour">16:32 GMT+1</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <p class="news__data">10 ноября 2023 г.</p>
+
+          <div class="news__cart">
+            <div class="news__cart-img">
+              <img src="./img/news/news-5.png">
+            </div>
+            <div class="nc-main">
+              <h3 class="news__cart-title">
+                Фьючерсы растут на фоне "ястребиного" тона Пауэлла, <br/>
+                рынок ждет свежих статданных
+              </h3>
+              <p class="news__cart-dsc">
+                Фьючерсы на Уолл-стрит поднимаются в пятницу несмотря на то, <br/>
+                что "ястребиный" тон председателя Федеральной резервной системы<br/>
+                Джерома Пауэлла ослабил надежды на завершение повышения ставок.
+              </p>
+              <div class="news__cart-date">
+                <p class="news__cart-MouthYear">10 нояб. 2023 г.</p>
+                <p class="news__cart-hour">11:08 GMT+1</p>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+
+      <div class="about">
+        <div class="about__top">
+          <h2 class="about__title">О компании</h2>
+          <div class="about__title-2">
+            TGR -
+            <span>Think Grow Rich!</span>
+          </div>
+        </div>
+          <p class="about__dscr">
+            <span>TGR-Group -</span> представляет гибкую и удобную торговую платформу, разработанную трейдерами с<br/>
+            учетом их опыта, чтобы обеспечить успешное онлайн-торговлю.
+          </p>
+          <h3 class="advantages-title">Наши преимущества</h3>
+          <div class="advantages">
+            <div class="advantages__cart">
+              <img src="./img/advantages/1.svg" alt="1">
+              <p class="advantages__cart-dscr">
+                Предоставляем доступ к широкому спектру финансовых инструментов, позволяя вам выбирать наилучшие возможности для торговли.
+              </p>
+            </div>
+
+            <div class="advantages__cart">
+              <img src="./img/advantages/2.svg" alt="1">
+              <p class="advantages__cart-dscr">
+                Предлагаем более 80 технических индикаторов для более точного анализа рынка и принятия информированных решений.
+              </p>
+            </div>
+
+            <div class="advantages__cart">
+              <img src="./img/advantages/3.svg" alt="1">
+              <p class="advantages__cart-dscr">
+                Предоставляем доступ к экономическому календарю, чтобы помочь вам следить за важными событиями и публикациями, влияющими на рынок.
+              </p>
+            </div>
+
+            <div class="advantages__cart">
+              <img src="./img/advantages/4.svg" alt="1">
+              <p class="advantages__cart-dscr">
+                Платформа удобна и доступна на разных устройствах, включая сенсорные.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__bottom">
+            <p>
+              <b>TGR</b> объединяет лучший опыт в мире онлайн-торговли, собрав команду профессионалов с десятилетним стажем в финансовой сфере. 
+              Наша миссия заключается в обеспечении успеха наших клиентов и развитии мировой финансовой индустрии.
+            </p>
+            <p>
+              Мы не только понимаем потребности наших клиентов, но и на практике создаем платформу, которая наилучшим образом удовлетворяет эти 
+              потребности. Мы предоставляем высококачественный сервис и богатый набор интеллектуальных инструментов, осознавая, как важно качество брокерских услуг для успеха трейдеров.
+            </p>
+            <p>
+              Мы уделяем особое внимание обучению начинающих трейдеров, одновременно предлагая услуги и инструменты, отвечающие запросам профессионалов финансовых рынков.
+            </p>
+            <p>
+              <b>TGR</b> сотрудничает с клиентами по всему миру, предоставляя выгодные условия для успешной торговли на мировых финансовых рынках. Мы всегда готовы внимательно прислушиваться
+               к мнениям клиентов, чтобы сделать их опыт торговли наиболее комфортным.
+            </p>
+            <p>
+              Наше отношение к клиентам прозрачно: высокотехнологичная платформа предоставляет трейдерам четкую картину мировых финансовых рынков и помогает объективно оценить риски. Это строит
+               взаимное доверие и создает благоприятное инвестиционное окружение в <b>TGR</b>
+            </p>
+          </div>
+        
+      </div>
+
+      <section class="contact">
+        <h3 class="contact__title">Контакты</h3>
+
+        <div class="contact__item">
+          <div class="contact__item-phone">
+            <img src="./img/icons/phone.svg" alt="phone">
+            <a href="tel:+996700495212">+996700495212</a>
+            <p>9 a.m. - 9 p.m.(GMT +2)<br/>(Пн-Пт)</p>
+          </div>
+          <div class="contact__item-adress">
+            <img src="./img/icons/adress.svg" alt="phone">
+            <p>122 Main Street, Oceanview, <br/>Coralville, Sunland"</p>
+          </div>
+          <div class="contact__item-phone">
+            <img src="./img/icons/gmail.svg" alt="phone">
+            <a href="mailto:support@tgr-group.com">support@tgr-group.com</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__company">
+            <h3 class="footer__title">Компания</h3>
+            <p>
+              TGR-Group. Business company number 25432 <br/>
+              BC 2019
+            </p>
+            <p>
+              Suite 305, Griffith Corporate Centre,<br/>
+              P.O. Box 1510, Beachmont, Kingstown,<br/>
+              St. Vincent and the Grenadines
+            </p>
+          </div>
+
+          <div class="footer__support">
+            <h3 class="footer__title">Поддержка</h3>
+            <a href="tel:+996700495212">+996700495212</a>
+            <a href="mailto:support@tgr-group.com">support@tgr-group.com</a>
+          </div>
+
+          <div class="footer__doc">
+            <h3 class="footer__title">Документы</h3>
+            <a href="#">Условия использования</a>
+            <a href="#">Предупреждение о рисках</a>
+            <a href="#">Политика противодействия<br/>отмывания денежных средств</a>
+            <a href="#">Политика приватности</a>
+            <a href="#">Политика ввода/вывода средств</a>
+            <a href="#">Партнёрское соглашение</a>
+          </div>
+
+          <div class="footer__consult">
+            <h3 class="footer__title">Личная консультация</h3>
+            <button class="footer__consult-btn"  onclick="redirectToLink()">Записаться</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-dscr">
+            <p>
+              Просим обратить внимание, что во избежание конфликта согласно определению в Правиле 902 Положения S обнародованного
+              в соответствии с Законом США «о ценных бумагах» 1933 года, вся информация, в том числе и платформа, на этом веб-сайте
+              не может быть использована Гражданами США. За исключением зарегистрированного в США брокера-дилера; банка, действующего
+              в качестве брокера-дилера; филиала или агентства гражданина США за пределами США или граждане США, проживающие за пределами
+              США -  Для таких категорий инвесторов все транзакции будут выполнены за пределами США.
+            </p>
+            <p>
+              Investizo LTD. does not provide service to residents of the EEA countries, Австралия, Израиль, Япония, Соединенные Штаты and some other countries.
+            </p>
+          </div>
+
+          <div class="footer-logo">
+            <img src="./img/logo.svg" alt="Logo">
+            <p>© 2019-2023 TGR-Group Все права защищены</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </footer>
+  </div> <!-- wrapper -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
